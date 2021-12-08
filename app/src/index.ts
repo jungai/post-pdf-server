@@ -1,5 +1,6 @@
 import fastify from "fastify";
 import type { FastifyInstance } from "fastify";
+import { setupV1Routes } from "./routes/v1";
 
 const app: FastifyInstance = fastify({ logger: true });
 
@@ -7,14 +8,9 @@ app.register(require("fastify-cors"));
 
 // api routes
 app.register(
-    (v1Ctx, opts, done) => {
-        v1Ctx.get("/", (_req, reply) => {
-            reply.send({ hello: "world" });
-        });
-
-        v1Ctx.post("/pdf", (_req, reply) => {
-            reply.send({ hello: "world" });
-        });
+    (instance, opts, done) => {
+        // all routes for v1
+        setupV1Routes(instance);
 
         done();
     },
