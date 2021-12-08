@@ -1,8 +1,6 @@
 {
   "name": "e2e",
   "version": "1.0.0",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
   "author": "jungai",
   "license": "ISC",
   "scripts": {
