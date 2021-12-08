@@ -1,0 +1,15 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "author": "jungai",
+  "license": "ISC",
+  "scripts": {
+    "build": "tsc -p ./tsconfig-onlyts.json"
+  },
+  "dependencies": {
+    "fastify": "^3.24.1",
+    "fastify-cors": "^6.0.2"
+  }
+}
