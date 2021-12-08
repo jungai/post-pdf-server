@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "fastify": "^3.24.1",
-    "fastify-cors": "^6.0.2"
+    "fastify-cors": "^6.0.2",
+    "playwright": "^1.17.1"
   }
 }
